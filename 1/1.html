@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zadanie 1 - A, B, C</title>
+    <link rel="stylesheet" type="text/css" href="css/1.css" />
+  </head>
+
+  <body>
+    <h1>Zadanie 1 - A, B, C</h1>
+    <p class="b">Bolded paragraph.</p>
+    <p class="i">Italic paragraph.</p>
+    <ol>
+      <li>
+        <br />
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+      </li>
+      <li><a href="http://google.pl/">Google</a></li>
+      <li><a href="http://google.pl/">Google</a></li>
+      <li><a href="http://google.pl/">Google</a></li>
+    </ol>
+    <table id="table1">
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+        <th>Header 4</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+    </table>
+
+    <table id="table2">
+      <tr>
+        <td><img src="images/pug.jpg" /></td>
+        <td>Some funny text</td>
+      </tr>
+      <tr>
+        <td colspan="2">Merged data</td>
+      </tr>
+    </table>
+
+    <form action="nazwa_edytowanego_pliku.html" method="GET">
+      <table>
+        <tr>
+          <td><label>Imię:</label></td>
+          <td><input id="imie" name="nazwa_pola" type="text" /></td>
+        </tr>
+        <tr>
+          <td><label for="listarozwijana">Lista rozwijana:</label></td>
+          <td>
+            <select id="listarozwijana" name="nazwa_kontrolki">
+              <option>Opcja 1</option>
+              <option>Opcja 2</option>
+              <option>Opcja 3</option>
+              <option>Opcja 4</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="poletekstowe">Pole tekstowe:</label></td>
+          <td>
+            <textarea
+              id="poletekstowe"
+              name="tekst"
+              rows="15"
+              cols="30"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Pola jednokrotnego wyboru:</label></td>
+          <td>
+            <input name="opcja1" type="checkbox" value="1" />
+            <label>Opcja 1</label>
+            <input name="opcja2" type="checkbox" value="2" />
+            <label>Opcja 2</label>
+            <input name="opcja3" type="checkbox" value="3" />
+            <label>Opcja 3</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Pola wielokrotnego wyboru:</label></td>
+          <td>
+            <input name="opcja1" type="radio" /> <label>Opcja 1</label>
+            <input name="opcja1" type="radio" /> <label>Opcja 2</label>
+            <input name="opcja1" type="radio" /> <label>Opcja 3</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="button1" type="submit" value="Zatwierdź" />
+            <input class="button1" type="reset" value="Wyczyść" />
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,400");
+
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 5vh 85vh 10vh;
+  grid-template-areas: "header" "main" "footer";
+  background-color: teal;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: table;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+}
+
+form {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+label {
+  text-align: center;
+  display: block;
+  color: white;
+  margin-top: 24px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  -webkit-margin-before: 0em;
+  color: white;
+}
+
+p {
+  font-weight: 100;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+#delay-load {
+  visibility: hidden;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  text-align: center;
+}
+
+input[type="number"],
+input[type="button"] {
+  margin: 0 auto;
+  padding: 10px 15px;
+  width: 25%;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+  border: 3px solid blue;
+  border-image: none;
+}
+
+input:focus {
+  border-color: #eee;
+}
+
+input[type="button"] {
+  margin-top: 10px;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+footer > p {
+  margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+  input[type="number"],
+  input[type="button"] {
+    border-radius: 15px;
+  }
+  #wrapper {
+    width: 100%;
+  }
+}

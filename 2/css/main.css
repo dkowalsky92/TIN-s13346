@@ -1,0 +1,73 @@
+body {
+  background-image: url("img/background.png");
+  font-family: "Lato", sans-serif;
+  line-height: 1.45;
+  color: rgb(180, 180, 180);
+}
+
+header {
+  padding-top: 30px;
+  text-align: center;
+  background-color: rgba(173, 27, 27, 0.3);
+  border-bottom: 1px solid rgb(66, 61, 50);
+}
+.header-text {
+  color: #6d6c6a;
+  font-size: 3em;
+  font-family: "Anton", cursive;
+  padding: 20px;
+}
+header img {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px 2px rgba(173, 60, 60, 0.6);
+}
+.gallery {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.gallery img {
+  width: 225px;
+}
+.gallery figure {
+  margin-left: 10px;
+}
+article {
+  padding: 10px;
+  -webkit-column-width: 350px;
+  -moz-column-width: 350px;
+  column-width: 350px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+article img {
+  width: 150px;
+  float: left;
+  padding: 20px;
+}
+.pull-quote {
+  padding: 20px;
+  font-size: 2em;
+  float: right;
+  font-family: "Anton", cursive;
+  color: rgba(173, 27, 27, 0.3);
+}
+footer {
+  border-top: 1px solid rgba(173, 27, 27, 0.3);
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    text-align: center;
+  }
+  .gallery img {
+    width: 400px;
+  }
+  article {
+    -webkit-column-width: 100vw;
+    -moz-column-width: 100vw;
+    column-width: 100vw;
+  }
+}

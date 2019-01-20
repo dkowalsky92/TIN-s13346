@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zadanie 4</title>
+  </head>
+
+  <body>
+    <header><p>Zadanie 4</p></header>
+    <main>
+      <div id="wrapper">
+        <form id="temp-converter">
+          <h2>Termometr</h2>
+
+          <label for="celsius">Celsius [°C]</label>
+          <input
+            id="celsius"
+            type="number"
+            name="celsius"
+            onclick="convertFrom('celsius')"
+            onkeyup="convertFrom('celsius')"
+          />
+
+          <label for="fahrenheit">Fahrenheit [°F]</label>
+          <input
+            id="fahrenheit"
+            type="number"
+            name="fahrenheit"
+            onclick="convertFrom('fahrenheit')"
+            onkeyup="convertFrom('fahrenheit')"
+          />
+
+          <label for="kelvin">Kelvin [K]</label>
+          <input
+            id="kelvin"
+            type="number"
+            name="kelvin"
+            onclick="convertFrom('kelvin')"
+            onkeyup="convertFrom('kelvin')"
+          />
+
+          <label for="rankine">Rankine [°R]</label>
+          <input
+            id="rankine"
+            type="number"
+            name="rankine"
+            onclick="convertFrom('rankine')"
+            onkeyup="convertFrom('rankine')"
+          />
+        </form>
+      </div>
+    </main>
+    <footer id="countdowner">
+      <p id="countdown"></p>
+      <p id="delay-load">BOOM!!!</p>
+    </footer>
+  </body>
+  <script src="js/4a.js"></script>
+  <link rel="stylesheet" text="text/css" href="css/4a.css" />
+</html>

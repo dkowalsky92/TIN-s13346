@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zadanie 4 - B</title>
+  </head>
+
+  <body>
+    <header><p>Zadanie 4 - B</p></header>
+    <main>
+      <div id="wrapper">
+        <table id="students">
+          <tr>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>E-mail</th>
+          </tr>
+          <tr>
+            <td>Mariusz</td>
+            <td>Dziąsło</td>
+            <td>m.dziąsło@gmail.com</td>
+          </tr>
+        </table>
+
+        <form id="add-student" name="add-student" action="index.html">
+          <label>Imię <span class="red">*</span></label>
+          <input
+            id="first-name"
+            name="first-name"
+            type="text"
+            placeholder="Dominik"
+            required
+          />
+
+          <label>Nazwisko <span class="red">*</span></label>
+          <input
+            id="last-name"
+            name="last-name"
+            type="text"
+            placeholder="Kowalski"
+            required
+          />
+
+          <label for="email">E-mail <span class="red">*</span></label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="dominik.kowalski@gmail.com"
+            required
+          />
+
+          <input
+            type="button"
+            value="Dodaj studenta"
+            onclick="validateForm()"
+            method="post"
+          />
+
+          <p><span class="red">*</span> - pola wymagane</p>
+
+          <ul id="alerts" class="red"></ul>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script src="js/4b.js"></script>
+  <link rel="stylesheet" text="text/css" href="css/4b.css" />
+</html>

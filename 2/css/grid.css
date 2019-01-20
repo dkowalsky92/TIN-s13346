@@ -1,0 +1,30 @@
+.main-container {
+	display: grid;
+	grid-template-columns: 270px auto;
+	grid-template-areas:
+	    "header header"
+	    "gallery article"
+	    "footer footer"
+}
+header {
+	grid-area: header;
+}
+.gallery {
+	grid-area: gallery;
+}
+article {
+    grid-area: article;
+}
+footer {
+ 	grid-area: footer;
+}
+@media (max-width: 800px) {
+	.main-container {
+		grid-template-columns: auto;
+		grid-template-areas:
+		    "header"
+		    "article"
+		    "gallery" 
+		    "footer"
+	}
+}
